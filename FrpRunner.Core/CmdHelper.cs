@@ -9,36 +9,41 @@ namespace FrpRunner.Core
 {
     public static class CmdHelper
     {
-        static Process cmd = null;
+        static Process p = null;
 
         public static void Start()
         {
             Stop();
-            cmd = new Process();
-            cmd.StartInfo.FileName = "cmd.exe";
-            cmd.StartInfo.UseShellExecute = false;    //是否使用操作系统shell启动
-            cmd.StartInfo.RedirectStandardInput = true;//接受来自调用程序的输入信息
-            cmd.StartInfo.RedirectStandardOutput = true;//由调用程序获取输出信息
-            cmd.StartInfo.RedirectStandardError = true;//重定向标准错误输出
-            cmd.StartInfo.CreateNoWindow = true;//不显示程序窗口
-            cmd.Start();//启动程序
+            p = new Process();
+            //设置要启动的应用程序
+            p.StartInfo.FileName = "cmd.exe";
+            //是否使用操作系统shell启动
+            p.StartInfo.UseShellExecute = false;
+            // 接受来自调用程序的输入信息
+            p.StartInfo.RedirectStandardInput = true;
+            //输出信息
+            p.StartInfo.RedirectStandardOutput = true;
+            // 输出错误
+            p.StartInfo.RedirectStandardError = true;
+            //不显示程序窗口
+            p.StartInfo.CreateNoWindow = false;
+            //启动程序
+            p.Start();
         }
 
-        public static string Input(string str, bool withExit = true)
+        public static void Input(string command, bool withExit = false)
         {
             Start();
-            cmd.StandardInput.WriteLine(str + (withExit ? "&exit" : string.Empty)); //向cmd窗口发送输入信息
-            string output = cmd?.StandardOutput?.ReadToEnd(); //获取cmd窗口的输出信息
-            return output;
+            //向cmd窗口发送输入信息
+            p.StandardInput.WriteLine(command);
+            p.StandardInput.AutoFlush = true;
         }
 
         public static void Stop()
         {
-            if(cmd != null)
+            if(p != null)
             {
-                cmd?.Close();
-                cmd?.Kill();
-                cmd?.Dispose();
+                p?.Close();
             }
         }
     }

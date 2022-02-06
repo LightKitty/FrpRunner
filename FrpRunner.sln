@@ -7,9 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrpRunner.Service", "FrpRun
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrpRunner.Core", "FrpRunner.Core\FrpRunner.Core.csproj", "{9D4AA968-324C-4273-835D-57CC0D52537E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrpRunner.Test", "FrpRunner.Test\FrpRunner.Test.csproj", "{E9CA7A12-D7B7-4959-918F-B1E6235FD8CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FrpRunner.Test", "FrpRunner.Test\FrpRunner.Test.csproj", "{E9CA7A12-D7B7-4959-918F-B1E6235FD8CF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrpRunner.Form", "FrpRunner.Form\FrpRunner.Form.csproj", "{8277B95E-31AC-4C28-9262-913CB434A4F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrpRunner.Console", "FrpRunner.Console\FrpRunner.Console.csproj", "{5D000879-2328-48E6-A278-B6A839C1C982}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{8277B95E-31AC-4C28-9262-913CB434A4F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8277B95E-31AC-4C28-9262-913CB434A4F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8277B95E-31AC-4C28-9262-913CB434A4F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D000879-2328-48E6-A278-B6A839C1C982}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D000879-2328-48E6-A278-B6A839C1C982}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D000879-2328-48E6-A278-B6A839C1C982}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D000879-2328-48E6-A278-B6A839C1C982}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -16,7 +16,7 @@ namespace FrpRunner.Core
             {
                 try
                 {
-                    CmdHelper.Input(@"cd /d D:\Program Files\frp\ && .\frpc.exe -c .\frpc.ini");
+                    CmdHelper.Input(@"cd /d D:\Program Files\frp\ && .\frpc.exe -c .\frpc.ini", false);
                 }
                 catch (Exception ex)
                 {

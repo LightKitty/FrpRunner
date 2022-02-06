@@ -10,8 +10,16 @@ namespace FrpRunner.Test
         [TestMethod]
         public void InputTest()
         {
-            CmdHelper.Input(@"notepad");
-            //string result = CmdHelper.Input("ipconfig", true);
+            //CmdHelper.Input(@"notepad");
+            //string result = CmdHelper.Input("ipconfig", false);
+            CmdHelper.Stop();
+            Console.ReadLine();
+        }
+
+        [TestMethod]
+        public void StartTest()
+        {
+            CmdHelper.Start();
             Console.ReadLine();
         }
     }
