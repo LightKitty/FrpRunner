@@ -1,6 +1,6 @@
-﻿namespace FrpRunner
+﻿namespace FrpRunner.Service
 {
-    partial class Service1
+    partial class FrpRunnerService
     {
         /// <summary> 
         /// 必需的设计器变量。
