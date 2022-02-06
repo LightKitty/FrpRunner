@@ -32,7 +32,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="LightLog, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\LightLog.dll.2.1.0\lib\net45\LightLog.dll</HintPath>
+      <HintPath>..\..\..\packages\LightLog.dll.2.2.0\lib\net45\LightLog.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

@@ -22,7 +22,6 @@ namespace FrpRunner.Core
                 {
                     Log.Error("FrpHelper.Start error", ex);
                 }
-                //CmdHelper.Input(@"notepad");
             });
         }
 
